@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <div id="root"></div>
+</body>
+<!--ReactJS : 어플리케이션이 interactive 하도록 만들어주는 library-->
+<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<!--ReactJS DOM : 모든 React element들을 HTML body에 둘 수 있도록 하게 해주는 library 또는 pkg-->
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script>
+    const root = document.getElementById('root');
+
+    //Element 안에는 HTML 태그가 들어감
+    const span = React.createElement('span', {id: 'HelloWorld', style: {color: 'red'}}, 'Hello this is span');
+
+    //span 태그를 root에 렌더한다
+    ReactDOM.render(span, root);
+</script>
+</html>
